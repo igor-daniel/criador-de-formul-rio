@@ -16,8 +16,23 @@ class Input {
     }
   }
 }
+class Button{
+  constructor(label){
+    super('', label);
+    this.type = 'submit';
+  }
+}
 // implementação
 
 // email
 
 let email = new Input('email', 'Digite seu email');
+email.type = 'email'
+email.requared = true;
+
+// senha
+let senha = new Input('senha', 'Digite sua senha');
+senha.type = 'password';
+
+// button
+let button = new Input('Enviar'); 
